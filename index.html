@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👑 Valentine's Royal Message Repeater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="heart-bg" id="heartBg"></div>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <h1>👑 Valentine's Royal Messages 👑</h1>
+                <p>Create love messages in royal elegance</p>
+                <span class="valentine-badge">🌹 Happy Valentine's Day 2026 🌹</span>
+            </div>
+
+            <div class="input-group">
+                <label for="messageBox">💌 Your Love Message</label>
+                <span class="icon">💖</span>
+                <input 
+                    type="text" 
+                    id="messageBox" 
+                    placeholder="Type your sweet message here..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="numberBox">💝 How Many Times?</label>
+                <span class="icon">🔢</span>
+                <input 
+                    type="number" 
+                    id="numberBox" 
+                    placeholder="Number of repetitions..."
+                    min="1"
+                    max="100"
+                    autocomplete="off"
+                >
+            </div>
+
+            <button onclick="repeatMessage()">
+                💘 Generate Royal Messages 💘
+            </button>
+
+            <div class="output-header">
+                <span class="output-title">💞 Your Messages</span>
+                <button class="copy-all-btn" id="copyAllBtn" onclick="copyAllMessages()">
+                    📋 Copy All
+                </button>
+            </div>
+
+            <div class="output" id="output">
+                <p class="empty-state">
+                    Your royal messages will appear here... 💕
+                </p>
+            </div>
+
+            <div class="love-quote">
+                "In the kingdom of love, every message is a precious treasure." 👑💖
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">✅ Copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
